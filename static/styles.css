@@ -1,0 +1,102 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #8B0000; /* vermelho escuro */
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #ffd700; /* dourado para destaque */
+    text-decoration: underline;
+}
+
+hr {
+    margin: 24px 0;
+    border: none;
+    border-top: 2px solid #8B0000;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+h1, h2 {
+    color: #8B0000;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    background: #fff;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: #f2dede; /* tom claro de vermelho */
+    color: #8B0000;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+button, input[type="submit"] {
+    background: #8B0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: #a52a2a; /* tom mais claro de vermelho escuro */
+}
+
+input, select, textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: bold;
+    color: #8B0000;
+    margin-bottom: 6px;
+    display: block;
+}
