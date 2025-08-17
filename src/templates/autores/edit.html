@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<h2>Editar Autor</h2>
+<form method="post">
+    Nome: <input name="nome" value="{{ autor.nome }}"><br>
+    Nacionalidade: <input name="nacionalidade" value="{{ autor.nacionalidade }}"><br>
+    Nascimento: <input name="nascimento" value="{{ autor.nascimento }}"><br>
+    <button type="submit">Salvar</button>
+</form>
+{% endblock %}

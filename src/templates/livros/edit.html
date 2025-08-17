@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<h2>Editar Livro</h2>
+<form method="post">
+    Título: <input name="titulo" value="{{ livro.titulo }}"><br>
+    Gênero: <input name="genero" value="{{ livro.genero }}"><br>
+    Ano: <input name="ano" value="{{ livro.ano }}"><br>
+    Autor:
+    <select name="autor_id">
+        {% for autor in autores %}
+        <option value="{{ autor.id }}" {% if autor.id == livro.autor_id %}selected{% endif %}>{{ autor.nome }}</option>
+        {% endfor %}
+    </select><br>
+    <button type="submit">Salvar</button>
+</form>
+{% endblock %}
